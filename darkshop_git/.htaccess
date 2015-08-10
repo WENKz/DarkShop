@@ -1,0 +1,19 @@
+RewriteEngine on
+
+# Boutique
+RewriteRule ^([a-zA-Z0-9_-]+)$ Site/Index.php?page=$1 [L,QSA]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.css$ Site/Resources/$1/$2.css [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.js$ Site/Resources/$1/$2/$3.js [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.png$ Site/Resources/$1/$2.png [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.jpg$ Site/Resources/$1/$2.jpg [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.png$ Site/Resources/$1/$2/$3.png [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.jpg$ Site/Resources/$1/$2/$3.jpg [L]
+RewriteRule ^$ Site/Index.php [L]
+
+# Admin
+RewriteRule ^Admin/([a-zA-Z0-9_-]+)$ Admin/index.php?page=$1 [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.css$ ../Admin/Resources/$1/$2.css [L]
+RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.js$ Admin/Resources/$1/$2/$3.js [L]
+#RewriteRule ^Resources/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.jpg$ Admin/Resources/$1/$2/$3.jpg [L]
+RewriteRule ^$ Admin/index.php [L]
+#ErrorDocument 404 Error.html
