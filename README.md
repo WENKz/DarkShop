@@ -5,7 +5,7 @@ Simple boutique PHP avec API,
 Unturned, Starmade,Garry's mod,ARK
 
 Le plugin unturned lier au shop est disponible ici https://github.com/WENKz/Unturned_ShopAuto
-Demo: http://boutique.darkgames.fr/
+<br/>Demo: http://boutique.darkgames.fr/
 
 Site officiel
 ========================
