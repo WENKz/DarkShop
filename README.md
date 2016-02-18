@@ -31,6 +31,17 @@ remplacez les differentes informations de connection a la base de donnée<br>
 Les API pour rendre la boutique compatible avec un plugin sont placé ici : <strong>darkshop_git/Site/Controllers/ApiShopController.php</strong><br><br/>
 Si vous avez des problèmes contacter moi a l'adresse email suivante:  <a href="mailto:quentin.grisard@gmail.com" title="quentin grisard">quentin[dot]grisard[at]gmail[dot]com</a>
 
+Accès admin
+========================
+
+localhost/Admin<br/>
+login:admin<br/>
+pass: admin<br>
+
+<strong>Vous pouvez changer le mot de passe grace a la requete:</strong>
+<pre>
+UPDATE `TABLE`.`employe` SET `passe_employe` = MD5('VOTRE_PASSE') WHERE `employe`.`nom_employe` = 'admin';
+</pre>
 Changelog
 ========================
 0.1.0 : <br/>
