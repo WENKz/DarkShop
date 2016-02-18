@@ -15,10 +15,10 @@ http://quentingrisard.fr
 Installation ( BETA )
 ========================
 
-Téléchargez DarkShop, placez le dans votre répertoir WEB
-Editez les fichiers Site/Pattern/Model.php et Admin/Pattern/Model.php 
-Créez une base donéne et importez créez la base de données a partir du fichier BD.sql
-remplacez les differentes informations de connection a la base de donnée
+Téléchargez DarkShop, placez le dans votre répertoire WEB<br/>
+Editez les fichiers Site/Pattern/Model.php et Admin/Pattern/Model.php <br>
+Créez une base de données et importez le fichier BD.sql<br>
+remplacez les differentes informations de connection a la base de donnée<br>
     <pre>
     protected $db;
     protected $dbname = "DarkShop";
