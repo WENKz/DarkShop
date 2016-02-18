@@ -10,7 +10,7 @@ class LoginModel extends Model {
 
     public function connexionCompte($fields) {
         //On va chercher l'utilisateur dans la table client
-        $result = $this->count("employe", "*", array("nom_employe" => $fields['nom_employe'], "passe_employe" => $fields["passe_employe"]), true);
+        $result = $this->count("employe", "*", array("nom_employe" => $fields['nom_employe'], "passe_employe" => md5($fields["passe_employe"])), true);
         return $result;
     }
 
