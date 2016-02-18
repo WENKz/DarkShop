@@ -27,7 +27,8 @@ remplacez les differentes informations de connection a la base de donnée
     </pre>
 
 
-
+<br/>
+Les API pour rendre la boutique compatible avec un plugin son placé ici : darkshop_git/Site/Controllers/ApiShopController.php<br>
 Si vous avez des problèmes contacter moi a l'adresse email suivante:  <a href="mailto:quentin.grisard@gmail.com" title="quentin grisard">quentin[dot]grisard[at]gmail[dot]com</a>
 
 Changelog
