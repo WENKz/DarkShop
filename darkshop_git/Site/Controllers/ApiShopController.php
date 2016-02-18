@@ -19,7 +19,7 @@ class ApiShopController extends Controller {
     }
 
     public function unturnedDec($steamid, $pack) {
-        if ($_SERVER['REMOTE_ADDR'] != "188.165.74.180" || $_SERVER['REMOTE_ADDR'] != "188.165.74.181") {
+        if ($_SERVER['REMOTE_ADDR'] == "X.X.X.X" || $_SERVER['REMOTE_ADDR'] == "X.X.X.X") {
             $pack = strtr($pack, array("__" => " "));
             //  echo $pack;
             $player = $this->ApiShopModel->searchClient($steamid);
